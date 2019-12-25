@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
-import Experience from './Experience.js';
+import Experience from './components/experience';
 import Banner from './components/banner';
 import About from './components/about';
-import Projects from './components/projects'
+import Projects from './components/projects';
 import Head from './components/head';
 import logo from './logo.svg';
 import './App.css';
@@ -35,6 +35,9 @@ function App() {
                   <a className="nav-link scroll" href="/about">About Me</a>
                 </li>
                 <li className="nav-item">
+                  <a className="nav-link scroll" href="/experience">Work Experience</a>
+                </li>
+                <li className="nav-item">
                   <a className="nav-link scroll" href="/projects">Projects</a>
                 </li>
                 <li className="nav-item">
@@ -46,6 +49,7 @@ function App() {
           <Route exact path="/" component={Banner} />
           <Route exact path="/about" component={About} />
           <Route exact path="/projects" component={Projects} />
+          <Route exact path="/experience" component={Experience} />
           </div>
         </BrowserRouter>
       </div>
