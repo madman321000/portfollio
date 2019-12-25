@@ -14,7 +14,7 @@ function Banner(props) {
             deep learning, big data, and software engineering.</p>
             <div className="button-w3ls">
               <a href="resume.pdf" className="btn btn-sm animated-button thar-three mr-2">Resume <i className="fas fa-download" /></a>
-              <a href="contact.html" className="btn btn-sm animated-button thar-four">Hire Me</a>
+              <a href="/contact" className="btn btn-sm animated-button thar-four">Hire Me</a>
             </div>
             {/* copyright */}
             <br/>

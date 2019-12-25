@@ -5,6 +5,7 @@ import Banner from './components/banner';
 import About from './components/about';
 import Projects from './components/projects';
 import Head from './components/head';
+import Contact from './components/contact';
 import logo from './logo.svg';
 import './App.css';
 
@@ -41,7 +42,7 @@ function App() {
                   <a className="nav-link scroll" href="/projects">Projects</a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="contact.html">Contact Me</a>
+                  <a className="nav-link" href="/contact">Contact Me</a>
                 </li>
               </ul>
             </div>
@@ -50,6 +51,7 @@ function App() {
           <Route exact path="/about" component={About} />
           <Route exact path="/projects" component={Projects} />
           <Route exact path="/experience" component={Experience} />
+          <Route exact path="/contact" component={Contact} />
           </div>
         </BrowserRouter>
       </div>
